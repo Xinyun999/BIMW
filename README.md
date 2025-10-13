@@ -23,10 +23,10 @@ Compile and deploy contract on Ethereum network.
 
 2. Compile contracts and migrate to local network.
 // compile contracts
-truffle compile	
+'truffle compile	'
 
 // deploy contracts on local network (You need properly setup networks->development in truffle-config.js)
-truffle migrate --reset
+'truffle migrate --reset'
 
 Demo and test cases.
 1. Update configuration data in "./src/config/addr_list.json".
