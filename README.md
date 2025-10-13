@@ -4,8 +4,8 @@
 This is the implementation for our paper "[BIMW: Blockchain-Enabled Innocuous Model Watermarking for Secure Ownership Verification]"
 
 
-Our code is inspired by EaaW.
-https://github.com/shaoshuo-ss/EaaW
+Our code is inspired by [EaaW](https://github.com/shaoshuo-ss/EaaW).
+
 
 Run IPFS test network.
 Refer to "Blockchain/IPFS"
@@ -22,11 +22,13 @@ Compile and deploy contract on Ethereum network.
 -- correct deploy functions in ./migrations/1_deploy_contracts.js
 
 2. Compile contracts and migrate to local network.
+'''
 // compile contracts
-'truffle compile	'
+truffle compile	
 
 // deploy contracts on local network (You need properly setup networks->development in truffle-config.js)
-'truffle migrate --reset'
+truffle migrate --reset
+'''
 
 Demo and test cases.
 1. Update configuration data in "./src/config/addr_list.json".
