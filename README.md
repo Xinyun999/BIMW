@@ -13,7 +13,7 @@ Refer to "Blockchain/IPFS"
 You can run local miners as test network.
 Refer to "Blockchain/boot_network"
 
-Compile and deploy contract on Ethereum network.
+**Compile and deploy contract on Ethereum network.**
 1. You need check these points:
 
 -- ensure local miners are running
@@ -31,7 +31,7 @@ truffle compile
 truffle migrate --reset
 </pre>
 
-Demo and test cases.
+**Demo and test cases.**
 1. Update configuration data in "./src/config/addr_list.json".
 
 --- HttpProvider: replace with you local geth interface 'ip:port'
