@@ -3,10 +3,40 @@
 ## Introduction
 This is the implementation for our paper "[BIMW: Blockchain-Enabled Innocuous Model Watermarking for Secure Ownership Verification]"
 
-
 Our code is inspired by [EaaW](https://github.com/shaoshuo-ss/EaaW).
 
+**Getting Start**
+<pre>
+conda create -n eaaw python=3.8
+conda activate eaaw
+</pre>
 
+Install the necessary packages to run BIMW, including pytorch, opencv-python, tqdm, piqa, and scipy.
+<pre>
+conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.8 -c pytorch -c nvidia
+pip install opencv-python
+pip install tqdm
+pip install piqa
+pip install scipy
+</pre>
+
+To train a ResNet-18 model 
+<pre>
+bash image-classification/scripts/pretrain.sh {gpus}
+</pre>
+
+Embed the watermark into the pre-trained model. 
+<pre>
+bash image-classification/scripts/embed.sh {model_path} {wm_length} {wm_path} {gpus}
+</pre>
+
+Extract the watermark from the watermarked model.
+<pre>
+bash image-classification/scripts/test.sh {model_path} {wm_length} {wm_path} {trigger_path} {gpus}
+</pre>
+
+
+**Blockchain Protection**
 Run IPFS test network.
 Refer to "Blockchain/IPFS"
 
