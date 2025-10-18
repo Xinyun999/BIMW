@@ -37,6 +37,7 @@ bash image-classification/scripts/test.sh {model_path} {wm_length} {wm_path} {tr
 
 
 **Blockchain Protection**
+
 Run IPFS test network.
 Refer to "Blockchain/IPFS"
 
