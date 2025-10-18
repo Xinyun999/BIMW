@@ -22,17 +22,17 @@ pip install scipy
 
 To train a ResNet-18 model 
 <pre>
-bash image-classification/scripts/pretrain.sh {gpus}
+bash classification/scripts/pretrain.sh {gpus}
 </pre>
 
 Embed the watermark into the pre-trained model. 
 <pre>
-bash image-classification/scripts/embed.sh {model_path} {wm_length} {wm_path} {gpus}
+bash classification/scripts/embed.sh {model_path} {wm_length} {wm_path} {gpus}
 </pre>
 
 Extract the watermark from the watermarked model.
 <pre>
-bash image-classification/scripts/test.sh {model_path} {wm_length} {wm_path} {trigger_path} {gpus}
+bash classification/scripts/test.sh {model_path} {wm_length} {wm_path} {trigger_path} {gpus}
 </pre>
 
 
