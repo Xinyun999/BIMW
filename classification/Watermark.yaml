@@ -1,0 +1,22 @@
+
+
+
+model: resnet
+dataset: 
+epochs: 300
+learning_rate: 
+batch_size: 
+alpha: 
+seed: 42
+
+
+
+
+
+
+
+
+
+
+
+
