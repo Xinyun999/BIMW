@@ -16,9 +16,12 @@ For the ridge parameter τ in Eq. 4, it is typically set to a small positive val
 In our work, the default setting is τ = 0.01.
 
 
-Choices:
+**Choices:**
+
 mask counts s:   256, 1024,2048,4096
+
 watermark lengths n: 32,48,64,128,256
+
 Dist choices: For our image classification experiments, the metric function Dist(y, c_T) was defined as the predicted probability of the true target class.
 
 
