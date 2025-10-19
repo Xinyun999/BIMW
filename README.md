@@ -7,7 +7,7 @@ Our code is inspired by [EaaW](https://github.com/shaoshuo-ss/EaaW).
 
 **Getting Start**
 <pre>
-conda create -n eaaw python=3.8
+conda create -n BIMW python=3.8
 conda activate BIMW
 </pre>
 
