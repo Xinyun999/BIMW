@@ -150,7 +150,7 @@ def train(args):
         schedule = torch.optim.lr_scheduler.StepLR(optim, step_size=10, gamma=0.1)
         # construct LimeNet
         lime_model = LimeNet(args.num_mask, args.wm_length, args.image_size, args.num_channels, 
-                             args.device, args.tau)
+                             args.device, args.lam)
         # get target image
         target = get_target_images(args.target_path, args.wm_length, args.save_path, args.device)
         wm_loss_fn = get_watermark_loss(args)
@@ -317,7 +317,7 @@ def test(args):
 
     # construct lime model
     lime_model = LimeNet(args.num_mask, args.wm_length, args.image_size, args.num_channels, 
-                             args.device, args.tau)
+                             args.device, args.lam)
     # get target image
     target = get_target_images(args.target_path, args.wm_length, args.save_path, args.device)
     wsrs = []
