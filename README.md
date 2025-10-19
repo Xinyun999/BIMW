@@ -3,8 +3,6 @@
 ## Introduction
 This is the implementation for our paper "[BIMW: Blockchain-Enabled Innocuous Model Watermarking for Secure Ownership Verification]"
 
-Our code is inspired by [EaaW](https://github.com/shaoshuo-ss/EaaW).
-
 **Getting Start**
 <pre>
 conda create -n BIMW python=3.8
@@ -35,6 +33,7 @@ Extract the watermark from the watermarked model.
 bash classification/scripts/test.sh {model_path} {wm_length} {wm_path} {trigger_path} {gpus}
 </pre>
 
+The model watermarking code is inspired by [EaaW](https://github.com/shaoshuo-ss/EaaW).
 
 **Blockchain Protection**
 
