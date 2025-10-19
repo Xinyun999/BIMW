@@ -8,7 +8,7 @@ Our code is inspired by [EaaW](https://github.com/shaoshuo-ss/EaaW).
 **Getting Start**
 <pre>
 conda create -n eaaw python=3.8
-conda activate eaaw
+conda activate BIMW
 </pre>
 
 Install the necessary packages to run BIMW, including pytorch, opencv-python, tqdm, piqa, and scipy.
