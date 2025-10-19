@@ -35,7 +35,7 @@ bash classification/scripts/test.sh {model_path} {wm_length} {wm_path} {trigger_
 
 The model watermarking code is inspired by [EaaW](https://github.com/shaoshuo-ss/EaaW).
 
-**Blockchain Protection**
+## Blockchain Protection
 
 Run IPFS test network.
 Refer to "Blockchain/IPFS"
